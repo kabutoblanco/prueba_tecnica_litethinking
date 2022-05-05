@@ -16,7 +16,9 @@ Para acceder al admin de Django, esta son las credenciales:
 Link de la app web:
 https://litethinkingenterprise.herokuapp.com/
 
-Para visualizar la documentación del API que se consuma internamente, se puede revisar en swagger en la siguiente dirección:
+### Documentación
+
+Para visualizar la documentación del API que se consuma internamente así como el modelo empleado en Django, se puede revisar en swagger en la siguiente dirección:
 https://litethinkingenterprise.herokuapp.com/swagger
 
 Debido a que la plataforma Heroku requiere de ser paga para obtener una BD en MySQL o PostgrestSQL, por ende, me incline por realizar en la base de datos de SQLite.
