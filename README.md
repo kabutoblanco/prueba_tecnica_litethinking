@@ -9,6 +9,8 @@ Las funcionalidades de la app son las siguientes:
 3. Actualizar empresa.
 4. Eliminar empresa.
 
+### Servidor
+
 Para acceder al admin de Django, esta son las credenciales:
 * Usuario: daniel
 * Contraseña: oracle
