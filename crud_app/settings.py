@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'main_app',
     'frontend',
     'rest_framework',
+    'drf_yasg',
     'knox',
     'corsheaders'
 ]
@@ -159,6 +160,10 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 5
 }
 
+SWAGGER_SETTINGS = {
+    'DOC_EXPANSION': 'none',
+    'exclude_namespaces': ['exclude']
+}
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_URL = "/media/"

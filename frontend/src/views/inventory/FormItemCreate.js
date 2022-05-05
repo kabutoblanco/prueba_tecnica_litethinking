@@ -12,6 +12,7 @@ function FormItemCreate() {
   const mutation = useCreateEnterprise();
   const navigate = useNavigate();
 
+  // Se prepara un objeto con la estructura similar a la base de datos
   const [item, setItem] = useState({
     name: '',
     address: '',
@@ -36,6 +37,7 @@ function FormItemCreate() {
     }
   };
 
+  // Valida que el número de telefono cumpla con un limite de digitos
   const validateTelephone = (name) => {
     var pattern = new RegExp(/^[0-9]{7,10}$/);
     var isValid = false;
@@ -49,6 +51,7 @@ function FormItemCreate() {
     return { isValid, message };
   };
 
+  // Valida que el número de nit cumpla con un limite de digitos
   const validateNit = (name) => {
     var pattern = new RegExp(/^([0-9]{8,10})+-([0-9]{1,1})$/);
     var isValid = false;
@@ -64,9 +67,7 @@ function FormItemCreate() {
 
   return (
     <form className='user' onSubmit={handleSubmit} ref={formRef}>
-      <h4>
-        Fomulario de registro de empresa
-      </h4>
+      <h4>Fomulario de registro de empresa</h4>
       <hr className='sidebar-divider' />
       <div className='row'>
         <div className='col-md-6'>
@@ -135,7 +136,10 @@ function FormItemCreate() {
       <div className='row mt-3'>
         <div className='col-md-12'>
           <div className='d-flex w-100 justify-content-end'>
-            <button type='submit' className='btn btn-secundary btn-user btn-block mr-1' onClick={() => navigate('/enterprise')}>
+            <button
+              type='submit'
+              className='btn btn-secundary btn-user btn-block mr-1'
+              onClick={() => navigate('/enterprise')}>
               REGRESAR
             </button>
             <button type='submit' className='btn btn-primary btn-user btn-block'>

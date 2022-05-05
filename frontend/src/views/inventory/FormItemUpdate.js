@@ -11,11 +11,14 @@ function FormItemUpdate() {
   const formRef = useRef(null);
   const [show, setShow] = useState(false);
   const { id } = useParams();
-  const { isLoading, data } = useEnterprise(id);
-  const [item, setItem] = useState(data);
+
   const mutation = useUpdateEnterprise();
   const mutationRemove = useRemoveEnterprise();
   const navigate = useNavigate();
+
+  // Trae la empresa correspondiente al id de la URL
+  const { isLoading, data } = useEnterprise(id);
+  const [item, setItem] = useState(data);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
