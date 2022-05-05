@@ -1,0 +1,82 @@
+.error {
+  font-size: xx-small;
+  color: crimson;
+}
+
+.hidden {
+  display: none;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+/* NAVBAR & TOPBAR */
+.dropdown-menu {
+  right: 0;
+}
+
+.dropdown-item i {
+  margin-right: 0.5rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.back {
+  border-radius: 50%;
+  background: rgba(0, 10, 200, 0.5);
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+}
+
+.btn-secundary {
+  background: grey;
+}
+
+.item-navbar {
+  padding: 0 0.65rem;
+  background: rgba(1, 1, 1, 0.1);
+  border-bottom: 1px solid grey;
+}
+
+.item-navbar i {
+  margin-right: 0.5rem;
+}
+
+.sidebar-brand {
+  height: 56.19px;
+}
+
+.sidebar-custom {
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  background: white;
+  height: 100%;
+}
+/* NAVBAR & TOPBAR */
+
+/* TABLE RESPONSIVE */
+.table-wrap {
+  height: 200px;
+  overflow-y: auto;
+}
+/* TABLE RESPONSIVE */
+
+.mr-1 {
+ margin-right: 0.75rem;
+}
+
+.ml-1 {
+  margin-left: 0.75rem;
+ }

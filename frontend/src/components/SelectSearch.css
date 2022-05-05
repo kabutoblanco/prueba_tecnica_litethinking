@@ -1,0 +1,16 @@
+.list-select-search {
+  position: absolute;
+  z-index: 2;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.item-select-search:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: beige;
+}
+
+.item-select-search:focus {
+  background: rgba(0, 0, 0, 0.5);
+  color: beige;
+}
